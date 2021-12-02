@@ -8,7 +8,6 @@ public class DersGecme {
 
         System.out.println("Lütfen Ders Adını Yazıp Notunuzu Giriniz...");
 
-
         Scanner scan = new Scanner(System.in);
 
         String dersAdi = scan.nextLine();
@@ -26,10 +25,5 @@ public class DersGecme {
         else {
             System.out.println("Yanlış Değerde Not Girdiniz...Lütfen 0 ile 100 arasında not giriniz.");
         }
-
-
-
-
-
     }
 }
