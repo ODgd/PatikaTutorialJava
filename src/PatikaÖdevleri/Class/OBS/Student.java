@@ -24,10 +24,7 @@ public class Student {
     public void isCheckPass(){
         if (cAvarage.courseAvarage() >= 0.0 && cAvarage.courseAvarage() <= 100.0){
             this.cAvarage = cAvarage;
-
         }
-
-
     }
 
     public void printNote() {
