@@ -1,4 +1,4 @@
-package PatikaÖdevleri.Class.BoksOyunu;
+package PatikaÖdevleri.Class.BoksGame;
 
 public class Main {
 

@@ -1,6 +1,4 @@
-package PatikaÖdevleri.Class.BoksOyunu;
-
-import java.util.Random;
+package PatikaÖdevleri.Class.BoksGame;
 
 public class Fighter {
 
