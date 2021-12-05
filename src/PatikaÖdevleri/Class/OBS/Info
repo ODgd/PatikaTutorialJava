@@ -1,22 +1,45 @@
-Öğrenci Not Sistemi
-
-Course Sınıfı Özellikleri :
-
-Nitelikler (variable) : name,code,prefix,note,Teacher
-Metotlar : Course() , addTeacher() , printTeacher()
-
-Teacher Sınıfı Özellikleri :
-
-Nitelikler : name,mpno,branch
-Metotlar : Teacher()
-
-Student Sınıfı Özellikleri :
-
-Nitelikler : name,stuNo,classes,course1,course2,course3,avarage,isPass
-Metotlar : Student(), addBulkExamNote(), isPass(), calcAvarage(), printNote()
+Açıklama : Grup çalışmalarında aldığımız kararla birlikte haftalık olarak, belli bir grup veya bireysel olarak
+            proje tabanlı çalışmalar yapmayı hedefliyoruz. Her hafta ürettiğimiz veya bulduğumuz
+            senaryolarla çalışmak istiyoruz. Bu amaçla gruptaki diğer arkadaşların da desteğini bekliyoruz.
 
 
-Ödev
+--------------Öğrenci Not Sistemi-----------------
+
+
+--------------Course (Ders) Sınıfı Özellikleri :
+
+Variable : name,code,prefix,note,Teacher
+                    // Ders adı, Ders kodu, ders öğretmeni
+Methodlar : Course() , addTeacher() , printTeacher()
+        // Course constructoru, öğretmen ekleme methodu, öğretmeni yazdırma
+
+--------------Teacher (Öğretmen) Sınıfı Özellikleri :
+
+Variable : name (isim), branch(verdiği ders)
+Methodlar : Teacher() (Constructor)
+
+--------------Student (Öğrenci) Sınıfı Özellikleri :
+
+Variable : name,stuNo,classes,course1,course2,course3,avarage,isPass
+           // isim, öğr. no, sınıfı, ders1,2,3, ortalaması, geçti-kaldı
+Methodlar : Student(), addBulkExamNote(), isPass(), calcAvarage(), printNote()
+           // Const., sınav notu ekleme, geçti-kaldı, ort hesaplama, notları bastırma
+
+----------------Aşamalar
+
+1-) 3 class oluşturulacak ve variableler ve methodlar eklenir
+2-) variablelerin constructorları oluşturularak ve this keyword kullanılarak objelerle birlikte kullanılabilir
+3-) methodların içi doldurularak mainde veya diğer classlarda çağırıabilir.
+4-) classların methodları birbirleri içinde çağırılarak kullanılabilir.
+5-) en son main methodda ilgili classlardan objeler oluşturulup değerler atanarak çalıştırılır.
+    Örn; course classı içinde teacher clasından obje oluşturularak addTeacher methodunda kullanılabilir
+         veya main methodda student classından obje oluşturularak girilen notların ort çıkarılabilir...
+
+  ***Note : Tavsiyedir. Farklı yollardan gidilebilir. İlgili method ve variableler geliştirilebilir ve
+           ciddi bir projeye de dönüştürülebilir. Farklı çözüm yolları ve geliştirmeler görmek isteriz  :)
+
+-------------Ektra Ödev
+
 Course sınıfına derse ait sözlü notu kısmını girin ve ortalamaya etkisini
 her ders için ayrı ayrı belirtin. Sözlü notların ıda ortalamaya etkileme
 yüzdesi ile dahil edin.
@@ -27,4 +50,4 @@ sınav notunun etkisi %80'dir.
 Öğrenci sözlüden 90, sınavdan 60 almış ise, o dersin
 genel ortalamaya etkisi şu şekilde hesaplanır :
 
-Fizik Ortalaması : (90 * 0.20) + (60* 0.80);
+Örn; Fizik Ortalaması : (90 * 0.20) + (60* 0.80);
