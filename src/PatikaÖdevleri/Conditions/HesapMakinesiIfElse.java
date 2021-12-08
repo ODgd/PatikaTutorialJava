@@ -36,7 +36,6 @@ public class HesapMakinesiIfElse {
             case 4:
                 System.out.println(a / b);
                 break;
-
         }
     }
 }
