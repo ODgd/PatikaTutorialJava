@@ -1,13 +1,37 @@
-package PatikaÖdevleri.Class.OBS2;
+package PatikaÖdevleri.Class.OBS_Update;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Data {
 
-    List<Student> stuEkle() { // Öğrencilerin listesi
-        //  Data s = new Data();
-        List<Student> öğrenciList = new ArrayList<>();
+    private static List<Student> öğrenciList = new ArrayList<>();
+
+    public <Data> List<Student> getÖğrenciList() {
+        return öğrenciList;
+    }
+
+    public void setÖğrenciList(List<Student> öğrenciList) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Eklemek isteiğiniz öğrenci adı ve numarası  : ");
+        String name = scan.nextLine();
+        String stuNo = scan.nextLine();
+        System.out.println("Öğrenci notlarını girin  (Sırasıyla ; Mat, Tur, Geo, Bio, Tar) : ");
+        int mat = scan.nextInt();
+        int tur = scan.nextInt();
+        int geo = scan.nextInt();
+        int bio = scan.nextInt();
+        int tar = scan.nextInt();
+
+        Student s = new Student(name, stuNo, mat, tur, geo, bio, tar);
+
+        öğrenciList.add(s);
+        System.out.println("Öğrenci bilgi ve notları başarıyla eklendi.");
+        this.öğrenciList = öğrenciList;
+    }
+    /*   List<Student> stuEkle() { // Öğrencilerin listesi // Default girilmek istenirse....
 
         Student s1 = new Student("Ali", "123", "3", 70, 60,50,40,80);
         Student s2 = new Student("Ayşe", "321", "4",85,18,35,45,70);
@@ -23,6 +47,7 @@ public class Data {
 
         return öğrenciList;
     }
+  */
 
     <List> java.util.List<Teacher> teacEkle() {  //Öğretmen listesi
         //  Data t = new Data();
@@ -41,7 +66,6 @@ public class Data {
         öğretmenList.add(t5);
 
         return öğretmenList;
-
     }
 
     List<Course> courseEkle() { // Derslerin listesi
@@ -62,5 +86,4 @@ public class Data {
 
         return dersList;
     }
-
 }

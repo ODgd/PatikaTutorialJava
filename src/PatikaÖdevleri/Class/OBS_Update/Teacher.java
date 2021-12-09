@@ -1,10 +1,9 @@
-package PatikaÖdevleri.Class.OBS2;
+package PatikaÖdevleri.Class.OBS_Update;
 
 public class Teacher {
 
-    String name;
     String branch;
-    Data teac;
+    String name;
 
     public Teacher(String name, String branch) {
         this.name = name;
