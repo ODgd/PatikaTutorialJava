@@ -1,4 +1,4 @@
-package PatikaÖdevleri.Class.OBS2;
+package PatikaÖdevleri.Class.OBS_Update;
 
 public class Course { //Bu classta ders adı ve prefixini constructorla alıp data classında kullanacağız
 
